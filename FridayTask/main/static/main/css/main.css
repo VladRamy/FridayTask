@@ -1,0 +1,95 @@
+body {
+    background: #06799F;
+}
+aside {
+    float: left;
+    background: #024E68;
+    width: 26%;
+    padding:2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #216278;
+}
+
+aside img {
+    width: 96px;
+    float: left;
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside span{
+    font-size: 30px;
+    margin-left: 10px;
+    font-width: bold;
+    position: relative;
+    top: +25px;
+}
+
+aside h3 {
+    margin-top: 100px;
+    font-size:30px;
+}
+
+aside ul {list-style: none}
+aside ul li{
+    color: #fff;
+    display: block;
+    margin-top:20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #00C322;
+    text-decoration: none;
+    transform: scale(1.05)
+}
+
+aside a{text-decoration: none;}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin:20px auto;}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+.publications-container {
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.publication {
+    width: 300px;
+    color: #fff;
+    background-color: #ffc107;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}

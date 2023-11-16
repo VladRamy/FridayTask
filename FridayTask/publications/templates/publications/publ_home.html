@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Публикации на сайте{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Публикации на сайте</h1>
+        <div class="publications-container">
+            {% if publications %}
+                {% for el in publications %}
+                    <div class="publication">
+                        <h3>{{ el.title }}</h3>
+                        <p>{{ el.anons }}</p>
+                        <a href="{% url 'publ-detail' el.id %}" class="btn btn-warning">Читать детальнее</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>У вас нет записей!</p>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

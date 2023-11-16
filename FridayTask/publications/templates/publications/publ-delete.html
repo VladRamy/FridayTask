@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Публикации на сайте{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Удаление публикации</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            <button clas="btn btn-success" type="submit">Удалить публикацию</button>
+        </form>
+    </div>
+{% endblock %}
