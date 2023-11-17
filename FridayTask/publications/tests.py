@@ -7,7 +7,7 @@ from mixer.backend.django import mixer
 class TestPublications(TestCase):
 
     def test_index(self):
-        response = self.client.get('publications/')
+        response = self.client.get('/publications/')
         self.assertEqual(response.status_code, 200)
 
     def test_publication_can_be_created(self):
